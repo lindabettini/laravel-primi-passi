@@ -10,7 +10,7 @@
 
 <body>
   <header>
-    <h1>Ciao laravel</h1>
+    <h1>Hello Laravel !</h1>
 
 
   </header>
