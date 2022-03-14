@@ -14,21 +14,37 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view(('nav'));
-});
+    return view('home');
+})->name('home');
+
+Route::get('/chi-siamo', function () {
+
+    return view('blog/about');
+})->name('about');
+
+
+Route::get('/articoli', function () {
+
+    return view('blog/articles');
+})->name('articles');
+
+
+Route::get('/prodotti', function () {
+
+    return view('blog/products');
+})->name('products');
 
 
 Route::get('/nav', function () {
 
     $data = [
-    'tot_pages' => 4,
-    'titles' => [
-            'Home', 
-            'Pagina 1',
-            'Pagina 2',
-            'Pagina 3',
-        ]
+        'pages' => [
+            'Home' => 'home',
+            'About' => 'about',
+            'Products' => 'products',
+            'Articles' => 'articles',
+        ],
     ];
-    
-    return view(('blog/nav', $data));
+
+    return view('blog/nav', $data);
 });

@@ -11,8 +11,8 @@
 <body>
   <header>
     <ul>
-      @foreach($titles as title)
-      <li>{{$title}}</li>
+      @foreach($pages as $title=>$route)
+      <li><a href="{{route($route)}}">{{$title}}</a></li>
       @endforeach
     </ul>
   </header>
