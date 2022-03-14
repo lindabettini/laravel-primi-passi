@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Imagine list of products...</h1>
+  <h1>Imagine a list of products...</h1>
 </body>
 
 </html>
