@@ -21,19 +21,19 @@ Route::get('/', function () {
 // About
 Route::get('/chi-siamo', function () {
 
-    return view('blog/about');
+    return view('blog.about');
 })->name('about');
 
 // Articoli
 Route::get('/articoli', function () {
 
-    return view('blog/articles');
+    return view('blog.articles');
 })->name('articles');
 
 // Prodotti
 Route::get('/prodotti', function () {
 
-    return view('blog/products');
+    return view('blog.products');
 })->name('products');
 
 // NAV
