@@ -13,28 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Home
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
+// About
 Route::get('/chi-siamo', function () {
 
     return view('blog/about');
 })->name('about');
 
-
+// Articoli
 Route::get('/articoli', function () {
 
     return view('blog/articles');
 })->name('articles');
 
-
+// Prodotti
 Route::get('/prodotti', function () {
 
     return view('blog/products');
 })->name('products');
 
-
+// NAV
 Route::get('/nav', function () {
 
     $data = [
